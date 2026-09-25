@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Slabo+13px&display=swap");
+:root {
+  --Verde-Oliva-Profundo: #2c3e2b;
+  --Dourado-Fosco: #c5a059;
+  --Creme: #fdfbf7;
+  --Preto-Cafe: #1f1a17;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--Creme);
+}
+
+header {
+  background-color: var(--Verde-Oliva-Profundo);
+  padding: 3vh;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag {
+  color: var(--Creme);
+}
+
+nav {
+  list-style-type: none;
+  display: flex;
+  gap: 10%;
+}
+
+nav a {
+  color: var(--Dourado-Fosco);
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+nav a:hover {
+  border-bottom: 2px solid var(--Dourado-Fosco);
+}
+
+#Inicio {
+  background-color: var(--Verde-Oliva-Profundo);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5%;
+}
+
+.img-inicio {
+  width: 100%;
+  max-width: 400px;
+  mask-image: linear-gradient(to right, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 50%, transparent 100%);
+}
+
+p {
+  color: var(--Preto-Cafe);
+}
+
+#Cardapio {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: var(--Verde-Oliva-Profundo);
+  border-radius: 5%;
+  padding: 5%;
+  height: 150%;
+  max-width: 250px;
+  color: var(--Dourado-Fosco);
+  justify-items: center;
+  transition: 0.7s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img {
+  width: 120%;
+  height: 50%;
+}
+
+button {
+  border: none;
+  background-color: var(--Dourado-Fosco);
+  color: var(--Preto-Cafe);
+  padding: 5%;
+  border-radius: 4%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #796238;
+}
+
+#Sobre-Nos {
+  background-color: var(--Verde-Oliva-Profundo);
+  color: var(--Preto-Cafe);
+  padding: 5%;
+  text-align: center;
+}
+
+.formulario{
+    padding: 3%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.comentario{
+    width: 70%;
+    height: 70px;
+}
+
+input{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+    background-color: var(--Verde-Oliva-Profundo);
+    color: var(--c);
+}
+
+footer{
+    background-color: var(--Verde-Oliva-Profundo);
+    color: var(--Dourado-Fosco);
+    text-align: center;
+    display: flex;
+}
